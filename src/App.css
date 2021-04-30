@@ -1,0 +1,33 @@
+.container{
+    text-align: right;
+    margin-top: 20px;
+    max-width: 500px !important;
+}
+.btn{
+    border: none;
+}
+
+
+
+  .done{
+    color: rgb(139, 9, 9);
+    text-decoration: line-through;
+  }
+  .undone {
+    color: black;
+  }
+  .mCard{
+ 
+        padding: 5px;
+        margin-top: 20px;
+        width: 100%;
+        background-color: rgb(248, 248, 248);
+        box-shadow: 0px 3px 4px #ebebeb;
+        text-align: right;
+    
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+    
+  }

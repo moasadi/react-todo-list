@@ -3,13 +3,12 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
 } from "react-router-dom";
 import Home from '../pages/Home';
 import TodoList from '../pages/TodoList';
 
 
-import { Navbar, Nav} from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
 export class Header extends Component {
     render() {
@@ -18,21 +17,17 @@ export class Header extends Component {
                 <Router>
                     <div>
                         <Navbar bg="light" expand="lg">
-                            <Navbar.Brand href="/">لیست انجام کار</Navbar.Brand>
+                            <Navbar.Brand href="/">To-do list</Navbar.Brand>
                             <Nav className="mr-auto">
-                                <Nav.Link href="/">خانه</Nav.Link>
-                                <Nav.Link href="/todo-list">مشاهده لیست</Nav.Link>
+
+                                <Nav.Link href="/">home</Nav.Link>
+                                <Nav.Link href="/todo-list">View list</Nav.Link>
                             </Nav>
                         </Navbar>
                         <Switch>
-     
-                            <Route path="/">
-                                <Home />
-                            </Route>
-                            <Route path="/todo-list">
-                                <TodoList />
-                            </Route>
-                            
+                            <Route exact path="/" component={Home} />
+                            <Route path="/todo-list" component={TodoList} />
+
                         </Switch>
                     </div>
                 </Router>
