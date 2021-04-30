@@ -65,7 +65,7 @@ export class TodoList extends Component {
         const handelDeleteList = (index) => {
             let items = this.state.items;
             items.splice(index,1)
-            if(items.length==0){
+            if(items.length===0){
                 items=[];
             }
             this.setState({
@@ -81,7 +81,7 @@ export class TodoList extends Component {
             return (
                 <div className="column">
                     <div style={{ margin: "10px" }}>
-                        <Button variant="primary" onClick={handleShow}>اضافه کردن لیست</Button>
+                        <Button variant="primary" onClick={handleShow}>add list</Button>
                         <AddListDialog show={this.state.show} close={handleClose} addList={handelAddList}></AddListDialog>
                     </div>
                     <div className="container-fluid">
