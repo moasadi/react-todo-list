@@ -1,6 +1,6 @@
 <h1>react todo list drag and drop</h1>
 
-<p>all data store in localstorage</p>
+<p>react todo list drag and drop and all data store in localstorage</p>
 
 
 ### Installation
